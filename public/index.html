@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Fintech Platform</h1>
+        <div class="transaction-container">
+            <div class="transaction-box">
+                <h2>Deposit</h2>
+                <input type="number" id="depositUserId" placeholder="User ID">
+                <input type="number" id="depositAmount" placeholder="Amount">
+                <button onclick="deposit()">Deposit</button>
+            </div>
+            <div class="transaction-box">
+                <h2>Withdraw</h2>
+                <input type="number" id="withdrawUserId" placeholder="User ID">
+                <input type="number" id="withdrawAmount" placeholder="Amount">
+                <button onclick="withdraw()">Withdraw</button>
+            </div>
+        </div>
+        <div id="alertBox" class="alert-box"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
